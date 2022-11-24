@@ -46,11 +46,11 @@ def main_content(html):
 
 if __name__=='__main__':
     parser = argparse.ArgumentParser(description='News Feeder App')
-    parser.add_argument('-s', metavar='--search', nargs=1,
+    parser.add_argument('--search', nargs=1,
                     help='The Item we want to search News for',required=True)
     try:
         args = parser.parse_args()
-        search_item = sys.argv[2]
+        search_item = args.search[0]
         print(f"Scrapping Google News for {search_item} \n")
         url = build_url(search_item)
         if url is not None:
