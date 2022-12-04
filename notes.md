@@ -28,3 +28,7 @@ https://towardsdatascience.com/how-to-distribute-your-data-reports-via-mail-with
 sudo nano /etc/environment
 
 and add from_mail=""..
+
+## Standard for writing python code
+
+https://towardsdatascience.com/python-best-practices-for-writing-industry-standard-code-66b848783e0b
