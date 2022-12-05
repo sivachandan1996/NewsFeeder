@@ -32,3 +32,6 @@ and add from_mail=""..
 ## Standard for writing python code
 
 https://towardsdatascience.com/python-best-practices-for-writing-industry-standard-code-66b848783e0b
+
+## Unicode Symbols
+https://unicode-table.com/en/

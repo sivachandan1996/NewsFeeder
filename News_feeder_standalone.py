@@ -27,16 +27,17 @@ def build_url(search_item):
             The constructed URL for Google News
 
     """
-    try:
-        google_main_url = 'https://www.google.com/search?'
-        params = {'q':search_item,'tbm':'nws'}
-        logging.info("Succesfully build the URL \n")
-        logging.info(f"The URL is: {google_main_url+urllib.parse.urlencode(params)} \n")
-        return google_main_url+urllib.parse.urlencode(params)
-    except UserWarning:
-        logging.error("Couldn't build the URL\
-                     ..exiting the process")
-        sys.exit()
+    sys.exit()
+    # try:
+    #     google_main_url = 'https://www.google.com/search?'
+    #     params = {'q':search_item,'tbm':'nws'}
+    #     logging.info("Succesfully build the URL \n")
+    #     logging.info(f"The URL is: {google_main_url+urllib.parse.urlencode(params)} \n")
+    #     return google_main_url+urllib.parse.urlencode(params)
+    # except UserWarning:
+    #     logging.error("Couldn't build the URL\
+    #                  ..exiting the process")
+    #     sys.exit()
 
 
 # Fucntion to get the HTML PAGE
