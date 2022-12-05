@@ -3,12 +3,12 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import argparse
-import sys
 import logging
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import os 
+import html5lib
 
 
 logging.basicConfig(filename='NewsFeeder.log', encoding='utf-8', level=logging.DEBUG)
