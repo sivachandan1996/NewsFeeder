@@ -30,7 +30,7 @@ with input:
                             to_mail=recipient_email,search_item=search_item)
                         if status is True:
                             st.success('Mail 📧 Sent Sucesfully', icon="✅")
-                            choice = random.randint([1,2])
+                            choice = random.randint(1,2)
                             if choice == 1:
                                 st.snow()
                             if choice == 2:
@@ -41,6 +41,7 @@ with input:
 
                 elif email_html_body is False:
                     st.error(f"Couldnt Scrap the Google News for {search_item}")
+                    st.warning('Check the Spelling', icon="⚠️")
             elif html is False:
                 st.error('couldnt get HTML', icon="🚨")
 
